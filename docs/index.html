@@ -1,1 +1,28 @@
-
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>archverse websiteTEST2.0</title>
+    <!-- Aframe Libraries -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script> 
+  </head>
+  <body>
+    <!-- 2D UI -->
+    <div id="intro">
+      <iframe src="intro.html"></iframe>
+    </div>
+    <!-- Aframe -->
+    <a-scene
+      renderer="antialias: true; colorManagement: true; logarithmicDepthBuffer: false" 
+      loading-screen="enabled: false"
+      vr-mode-ui="false"
+      device-orientation-permission-ui="enabled: false"
+      fog="type: exponential; color: #222; density: 0.01"
+    >
+      <a-gltf-model position="0 0 -5" src="assets/qingliangting.glb"></a-gltf-model>
+      <a-sky color="#222"></a-sky>
+      <a-light color="#fff" intensity="1.0" position="0 1 5"></a-light>
+      <a-light type="ambient" color="#666"></a-light>
+      <a-entity camera orbit-controls="target: 0 2 -8; minDistance: 0.3; maxDistance: 25; initialPosition: 0 2 3"></a-entity>
+    </a-scene>
+  </body>
