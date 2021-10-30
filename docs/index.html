@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>archverse websiteTEST2.0</title>
-    <!-- Aframe Libraries -->
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script> 
-    <!-- style Libraries -->
+    <meta charset="utf-8" />
+    <title>ARCHVERSE.website</title>
     <style>
-    iframe
-      {
-        border: none;
-        width: 95%;
-        height: 95%;
+      body {
+        color: white;
+        margin: 25px;
       }
-     #intro 
-      {
-        z-index: 1;
-        position: relative;
-      } 
+      h {
+        font-size: 24pt;
+      }
+      iframe {
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border: none;
+        width: 100%;
+        height: 100%;
+      }
     </style>
   </head>
-      
   <body>
-    <!-- 2D UI -->
-    <div id="intro">
-      <iframe src="intro.html"></iframe>
-    </div>
-    <!-- Aframe -->
-    <a-scene
-      renderer="antialias: true; colorManagement: true; logarithmicDepthBuffer: false" 
-      loading-screen="enabled: false"
-      vr-mode-ui="false"
-      device-orientation-permission-ui="enabled: false"
-      fog="type: exponential; color: #222; density: 0.01"
-    >
-      <a-gltf-model position="0 0 -5" src="docs/assets/qingliangting.glb"></a-gltf-model>
-      <a-sky color="#222"></a-sky>
-      <a-light color="#fff" intensity="1.0" position="0 1 5"></a-light>
-      <a-light type="ambient" color="#666"></a-light>
-      <a-entity camera orbit-controls="target: 0 2 -8; minDistance: 0.3; maxDistance: 25; initialPosition: 0 2 3"></a-entity>
-    </a-scene>
+    <h><strong>ARCHVERSE</strong></h>
+    <p><a href="">项目介绍 PROJECT INTRO</a></p>
+    <p>
+      <a
+        href="https://roamresearch.com/#/app/PlotTheSoil/page/zwaeNb0hG"
+        target="_blank"
+        >项目档案 ARCHVERSE ARCHIVE</a
+      >
+    </p>
+    <p><a href="">相关项目 ROJECT RELATED</a></p>
+    <p><a href="">活动播报 ACTIVITY</a></p>
+    <p><a href="">互动留言 INTERACTION</a></p>
+    <p>📡 联系我们 CONTACT</p>
+    <p>
+      <a href="https://discord.gg/AFwy72RpnZ" target="_blank">Discord</a>
+      /
+      <a href="https://github.com/CAAINS/Archverse" target="_blank">GitHub</a>
+    </p>
   </body>
-  </html>
+  <iframe src="intro.html"></iframe>
+</html>
